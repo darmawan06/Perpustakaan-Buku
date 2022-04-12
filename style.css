@@ -1,0 +1,213 @@
+:root{
+	--color-primary : #43aab5;
+	--color-button : #24646b
+
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: content-box;
+}
+
+header{
+	background: var(--color-primary);
+	height: 3em;
+	display: flex;
+}
+header span{
+	margin: auto;
+	font-size: 1.5em;
+	color: white;
+	font-weight: bold;
+}
+main{
+	height: 100vh;
+	display: flex;
+}
+
+
+main section#form{
+	width: 25%;
+	background: var(--color-primary);
+	height: 100%;
+}
+main section#form form#formAdd{
+	color: white;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+main section#form form#formAdd h4{
+	font-size: 30px;
+	margin: auto;
+}
+main section#form form#formAdd div{
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+}
+
+main section#form form#formAdd div input[type='text'],main section#form form#formAdd div input[type='number']{
+	height: 40px;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+main section#form form#formAdd div input[type='checkbox']{
+	margin-left: 10px;
+	margin-top: 2px;
+}
+
+main section#form form#formAdd button{
+	width: 50%;
+	height: 3em;
+	margin: auto;
+	border: none;
+	border-radius: 10px;
+}
+
+main section#form form#formAdd button:hover{
+		background: var(--color-button);
+		color: white;
+}
+
+main section#books{
+	width: 75%;
+	height:100%;
+	display: flex;
+	background: var(--color-primary) ;;
+}
+
+main section#books div#booksIsComplete,main section#books div#booksIsNotComplete{
+	width: 50%;
+	height: auto;
+	background: white;
+	border-radius: 10px;
+	margin: 5px;
+	text-align: center;
+	overflow-y: auto;
+	border:2px solid var(--color-primary) ;
+	padding: 10px;
+}
+
+main section#books div#booksIsComplete div.item,main section#books div#booksIsNotComplete div.item{
+	display: flex;
+	background:var(--color-primary) ;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 10px;
+	box-shadow: 2px 2px 3px var(--color-button);
+}
+main section#books div#booksIsComplete div.item div,main section#books div#booksIsNotComplete div.item div{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+main section#books div#booksIsComplete div.item div.btn button,main section#books div#booksIsNotComplete div.item div.btn button{
+	margin: 5px;
+	height: 10px;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+	background: white;
+}
+main section#books div#booksIsComplete div.item div.btn button:hover,main section#books div#booksIsNotComplete div.item div.btn button:hover{
+	background: var(--color-button);
+	color: white;
+}
+
+main section#form form#formSearch{
+	display: flex;
+	padding: 10px;
+}
+
+main section#form form#formSearch div{
+	margin: auto;
+}
+
+
+main section#form form#formSearch div input[type='text']{
+	height: 20px;
+	border-radius: 5px;
+	padding: 5px;
+	border: none;
+}
+
+
+main section#form form#formSearch div input[type="submit"]{
+	height: 20px;
+	border-radius: 5px;
+	padding: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+main section#form form#formSearch div input[type="text"]:focus,main section#form form#formAdd div input:focus{
+	background:var(--color-button) ;
+	color: white;
+}
+
+main section#form form#formSearch div input[type="submit"]:hover{
+	background:var(--color-button) ;
+	color: white;
+}
+main{
+	position: relative;
+}
+main section#alertDelete{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background: rgba(32, 23, 23, 0.6);
+	height: 100%;
+	display: flex;
+}
+
+main section#alertDelete div.area{
+	margin: auto;
+	width: 20vw;
+	height: auto;
+	background: var(--color-primary);
+	padding: 30px;
+	color: white;
+	font-weight: bolder;
+}
+
+main section#alertDelete div.area i{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+main section#alertDelete div.area div.btn{
+	display: flex;
+	margin-top: 10px;
+}
+
+main section#alertDelete div.area div.btn button{
+	margin: auto;
+	width: 50px;
+	height: 50px;
+	border: none;
+	cursor: pointer;
+	background: white;
+}
+
+main section#alertDelete div.area div.btn button.yes:hover{
+	background: seagreen;
+	color: white;
+}
+
+main section#alertDelete div.area div.btn button.no{
+	background: darkred;
+	color: white;
+}
+
+main section#alertDelete div.area div.btn button.no:hover{
+	background: red;
+	color: white;
+}

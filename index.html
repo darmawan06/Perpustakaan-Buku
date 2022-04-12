@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Perpustakaan Buku</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<span>Perpustakaan Buku</span>
+	</header>
+	<main>
+		<section id="books">
+			<div id="booksIsComplete">
+				<h2>Buku Selesai Di Baca</h2>
+			</div>
+			<div id="booksIsNotComplete">
+				<h2>Buku Belum Selesai Di Baca</h2>
+			</div>
+		</section>
+		<section id="form">
+			<form id="formSearch">
+				<div>
+					<input type="text" name="search" placeholder="Cari Buku">
+					<input type="submit" value="Cari"></input>
+				</div>
+			</form>
+			<form id="formAdd">
+				<h4>Masukan Buku Baru</h4>
+				<div>
+					<label for="judul">Judul</label>
+					<input type="text" name="judul" required placeholder="Judul">
+				</div>
+				<div>
+					<label for="penulis">Penulis</label>
+					<input type="text" name="penulis" required placeholder="Penulis">
+				</div>
+				<div>
+					<label for="tahun">Tahun</label>
+					<input type="number" name="tahun" required placeholder="Tahun">
+				</div>
+				<div style="display: flex; flex-direction: row; ">
+					<span>Selesai Baca</span> 
+					<input type="checkbox" name="selesai">
+				</div>
+				<button type="submit">Tambahkan</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
